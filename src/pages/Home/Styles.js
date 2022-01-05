@@ -10,6 +10,14 @@ export const Container = styled.div`
   justify-content: center;
   text-align: center;
 
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .summary {
+    font-size: 1.2rem;
+  }
+
   .error {
     color: var(--wrong-answer)
   }

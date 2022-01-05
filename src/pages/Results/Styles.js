@@ -24,6 +24,7 @@ export const Result = styled.tr`
   .result__answer,
   .result__content {
     padding: 0.4rem;
+    font-size: 1.2rem;
   }
 
   .result__content {

@@ -5,13 +5,14 @@ export const Container = styled.div`
 
   .question__category {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 0.4rem;
   }
 
   .question__content {
     margin: 1rem 0 2rem;
     text-align: center;
+    font-size: 1.2rem;
     color: var(--text-primary);
   }
 

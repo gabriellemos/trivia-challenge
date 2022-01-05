@@ -14,13 +14,6 @@ export const Container = styled.article`
 
 export const Header = styled.header`
   margin: 1.6rem 0;
-
-  .emphasis {
-    color: var(--text-primary);
-    font-weight: bold;
-    font-size: 1.8rem;
-    display: block;
-  }
 `
 
 export const Body = styled.div`

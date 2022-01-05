@@ -17,12 +17,12 @@ const Home = () => {
     <Container>
       <Card.Container>
         <Card.Header>
-          <p>
+          <p className="title">
             welcome to the <span className="emphasis">Trivia Challenge!</span>
           </p>
         </Card.Header>
         <Card.Body>
-          <p>
+          <p className="summary">
             You will be presented with 10 True or False questions. Can you score
             100%?
           </p>

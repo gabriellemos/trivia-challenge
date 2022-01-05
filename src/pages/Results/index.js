@@ -39,7 +39,7 @@ const Results = () => {
               return (
                 <Result isCorrect={isCorrect(question, index)}>
                   <td className="result__answer">
-                    <span>{answer}</span>
+                    {answer}
                   </td>
                   <td
                     className="result__content"
@@ -51,7 +51,7 @@ const Results = () => {
           </tbody>
         </table>
       </Card.Container>
-      <Button onClick={() => navigate('/challenge')}>PLAY AGAIN?</Button>
+      <Button onClick={() => navigate('/')}>PLAY AGAIN?</Button>
     </Container>
   )
 }
