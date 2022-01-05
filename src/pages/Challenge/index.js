@@ -1,7 +1,9 @@
 import React from 'react'
 
-const Challenge = () => {
+import withTriviaQuestions from 'utils/withTriviaQuestions'
+
+const Challenge = ({ questions }) => {
   return <h1>Challenge</h1>
 }
 
-export default Challenge
+export default withTriviaQuestions(Challenge)

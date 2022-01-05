@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useMemo } from 'react'
+import { useSearchParams } from 'react-router-dom'
 
 const Home = () => {
-  return <h1>Welcome to the Trivia Challenge!</h1>
+  const [searchParams] = useSearchParams()
+
+  const renderError = useMemo(() => {
+    return searchParams.get('error') === ''
+  }, [])
+
+  return (
+    <main>
+      <h1>Welcome to the Trivia Challenge!</h1>
+      {renderError && <p>Error</p>}
+    </main>
+  )
 }
 
 export default Home
