@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import Question from 'components/Question'
 import { Container, QuestionContainer } from 'pages/Challenge/Container'
@@ -7,6 +8,7 @@ import withTriviaQuestions from 'utils/withTriviaQuestions'
 const Challenge = ({ questions }) => {
   const [current, setCurrent] = useState(0)
   const [results, setResults] = useState([])
+  const navigate = useNavigate()
 
   const questionAmount = useMemo(() => {
     return questions.length
@@ -14,7 +16,7 @@ const Challenge = ({ questions }) => {
 
   useEffect(() => {
     if (questionAmount > 0 && current === questionAmount) {
-      console.log('Completed', results)
+      navigate('/results', { state: { questions, results } })
     }
   }, [current])
 

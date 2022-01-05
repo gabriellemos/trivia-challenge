@@ -5,6 +5,11 @@ export const Container = styled.article`
   border-radius: 16px;
   box-shadow: var(--shadow);
   padding: 1.4rem;
+
+  &.noPaddingX {
+    padding-left: 0;
+    padding-right: 0;
+  }
 `
 
 export const Header = styled.header`
