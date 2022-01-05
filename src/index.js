@@ -4,11 +4,12 @@ import ReactDOM from 'react-dom';
 import 'css/normalize.css'
 import 'css/index.css'
 
+import Router from 'pages/Router'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1>Hello World</h1>
+    <Router />
   </React.StrictMode>,
   document.getElementById('root')
 );
