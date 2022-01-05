@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 
 import * as Card from 'components/Card'
 import { Button } from 'components/Button'
+import { Container } from 'pages/Home/Styles'
 
 const Home = () => {
   const [searchParams] = useSearchParams()
@@ -13,7 +14,7 @@ const Home = () => {
   }, [])
 
   return (
-    <main>
+    <Container>
       <Card.Container>
         <Card.Header>
           <p>
@@ -30,8 +31,10 @@ const Home = () => {
           <Button onClick={() => navigate('/challenge')}>BEGIN</Button>
         </Card.Footer>
       </Card.Container>
-      {/* {renderError && <p>Error</p>} */}
-    </main>
+      {renderError && (
+        <p className="error">Please check your internet connection.</p>
+      )}
+    </Container>
   )
 }
 
